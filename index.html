@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>UFO project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <img src="foo.png" alt="">
+    <div class="btn_group">
+        <div></div>
+        <button id="btn" onmousemove="moveUp()" onclick="moveUp()">Up</button>
+        <div></div>
+        <button id="btn" onmousemove="moveLeft()" onclick="moveLeft()">Left</button>
+        <div></div>
+        <button id="btn" onmousemove="moveRight()" onclick="moveRight()">Right</button>
+        <div></div>
+        <button id="btn" onmousemove="moveDown()" onclick="moveDown()">Down</button>
+
+            <div class="box hide">
+                <label>Speed:</label>
+                <input id="speed" type="range" value="20" min="5" max="70" onchange="setSpeed()">
+                <span id="value">20</span>
+            </div>
+            <i id="setting" class="fa-solid fa-gear rotate" onclick="toggleSpeed(event)"></i>
+       
+    </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

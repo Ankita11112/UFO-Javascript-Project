@@ -1,0 +1,81 @@
+body{
+    margin: 0%;
+    height: 100vh;
+    background-image: url(https://defensebridge.com/custom/domain_1/image_files/sitemgr_photo_6268.png);
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+img{
+height: 150px;
+position: absolute;
+top: 48%;
+left: 48%;
+transform: translate(-40%, -10%);
+transition: all 0.5s linear;
+}
+img:hover{
+    transform: scale(2);
+}
+
+.btn_group{
+    height: 240px;
+    width: 270px;
+    position: absolute;
+    left: 50%;
+    bottom: 0%;
+    transform: translateX(-50%);
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+#btn{
+    border: 5px dotted rgb(51, 117, 101);
+    border-radius: 5px;
+    font-size: medium;
+    font-family: sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    color: rgb(163, 0, 0);
+    background-color: rgb(132, 249, 228);
+}
+#setting{
+    position: absolute;
+    left: 48rem;
+    bottom: 15%;
+    font-size: 2.8rem;
+    color: rgb(17, 135, 146);
+    cursor: pointer;
+    transition: all 0.8s ease;
+}
+    
+.box{    
+    position: absolute;
+    left: 36.8rem;
+    bottom:30%;
+    background-color: rgb(92, 92, 92);
+    border: 2px solid transparent;
+    border-radius: 20px;
+    height: 55px;
+    width: 170px;
+    padding-top: 4px;
+    padding-left: 12px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+}
+#value{
+    color: rgb(96, 139, 219);
+    font-size: 19px;
+    font-weight: 800;
+}
+.hide{
+    display: none;
+}
+.rotate{
+    transform: rotate(90deg);
+}
+#speed{
+    cursor: pointer;
+}
